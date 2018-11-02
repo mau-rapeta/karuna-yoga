@@ -1,0 +1,54 @@
+.nosotros {
+
+    &__box {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    &__banner {
+        width: 100%;
+        margin: 2rem 0 20rem 0;
+        position: relative;
+    }
+
+    &__banner-img {
+        width: 85%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    &__scroll-box {
+        width: 2.5rem;
+        @include absCenter;
+        top: initial;
+        bottom: -11rem;
+        transition: all .2s;
+
+        &:hover {
+            bottom: -12rem;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+    }
+
+    &__scroll {
+        width: 100%;
+    }
+
+    &__sat {
+        border-top: 1px solid $color-dark;
+        border-bottom: 1px solid $color-dark;
+        padding: 3rem 0;
+
+        h2 {
+            font-size: $font-bg;
+            color: $color3;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 2rem;
+            text-align: justify;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.navigation {
+    position: fixed;
+    top: -1px;
+    left: 0;
+    width: 100vw;
+    background-image: url(../img/pleca-menu.svg);
+    background-size: cover;
+    background-position: center bottom;
+    height: 15.5rem;
+    z-index: 300;
+    transition: top 300ms ease-out;
+
+    @media only screen and (max-width: $bp-xlg) {
+        height: 12.5rem;
+    }
+
+     &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+     }
+
+     &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 0 40%;
+        height: 7.5rem;
+
+        @media only screen and (max-width: $bp-lg) {
+            display: none;
+        }
+     }
+
+     &__item {
+        list-style-type: none;
+     }
+
+     &__link {
+        position: relative;
+        transition: color .1s;
+
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            font-family: $headers-font;
+            font-size: $font-rg;
+            color: $color-dark;
+        }
+
+        &:hover {
+            color: $color1;
+        }
+     }
+
+    &__link:hover &__indicator {
+        opacity: 1;
+    }
+
+    &__indicator {
+        position: absolute;
+        bottom: -2.2rem;
+        width: 2rem;
+        transform: translateX(-50%);
+        left: 50%;
+        opacity: 0;
+        transition: opacity .1s;
+    }
+
+     &__logo {
+        height: 12rem;
+        margin-top: 10px;
+
+        @media only screen and (max-width: $bp-xlg) {
+            height: 10rem;
+            margin-top: 7px;
+        }
+     }
+
+     &__facebook {
+        height: 2rem;
+     }
+}

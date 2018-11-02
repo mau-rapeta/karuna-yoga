@@ -1,0 +1,61 @@
+///////// GENERAL VARIABLES  /////////
+
+// COLORS
+$color1: #60B7B7;
+$color2: #2E7676;
+$color3: #EA6E63;
+$color4: #1089C4;
+$color-dark: #4D4D4D;
+$color-white: #ffffff;
+$color-grey: #8B8B8B;
+
+// FONT FAMILIES
+$headers-font: 'Flamenco', sans-serif;
+$body-font: 'Krub', sans-serif;
+
+// FONT SIZES
+$font-rg: 1.6rem;
+$font-md: 1.8rem;
+$font-lg: 2rem;
+$font-bg: 3.5rem;
+$font-hg: 4.2rem;
+
+// FONT WEIGHTS
+$regular: 400;
+$bold: 700;
+
+// BOOTSTRAP BASED BREAKPOINTS 
+$bp-xlg: 75em;       // 1200px
+$bp-lg: 61.9375em;   // 991px
+$bp-md: 47.9375em;   // 767px
+$bp-sm: 35.9375em;   // 575px
+$bp-xs: 27.5em;      // 440px
+
+////////// BASIC SETUP //////////
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;   // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+    font-family: $body-font;
+    color: $color-dark;
+    font-size: $font-md;
+    font-weight: $regular;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1, h2, h3 {
+    font-family: $headers-font;
+}

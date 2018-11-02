@@ -1,0 +1,37 @@
+//////////////////////////////////
+//////// UTILITIES STYLES ////////
+//////////////////////////////////
+
+.onlyDesktop {
+    display: block;
+}
+
+.onlyMobile {
+    display: none;
+}
+
+@media only screen and (max-width: $bp-lg),
+       only screen and (hover: none) {
+    .onlyDesktop {
+        display: none;
+    }
+    
+    .onlyMobile {
+        display: block;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.lineBreak {
+    display: block;
+}
+
+.bold {
+    font-weight: 700;
+}

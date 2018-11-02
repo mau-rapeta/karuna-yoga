@@ -1,0 +1,24 @@
+{
+  "name": "karuna-yoga",
+  "version": "1.0.0",
+  "description": "web karunaYoga",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mau",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "magnific-popup": "^1.1.0"
+  }
+}

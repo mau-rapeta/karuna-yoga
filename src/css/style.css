@@ -316,8 +316,67 @@ h1, h2, h3 {
     color: #8B8B8B; }
 
 .card {
-  background-color: #EA6E63;
-  height: 20rem; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-family: "Flamenco", sans-serif; }
+  .card__content {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 55%;
+    -ms-flex: 0 0 55%;
+    flex: 0 0 55%;
+    padding: 4rem 3rem;
+    background-color: #e5e5e5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .card__content span {
+      color: #60B7B7;
+      display: block;
+      font-size: 2.5rem;
+      margin-bottom: 2rem; }
+  .card__picture {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 45%;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%; }
+  .card__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover; }
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Flamenco", sans-serif;
+  padding: 3px 1.5rem;
+  background-color: #EA6E63; }
+
+.btn--card {
+  -webkit-border-radius: 2rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
 
 .talleres__heading img {
   width: 10rem;
@@ -330,3 +389,18 @@ h1, h2, h3 {
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   grid-gap: 5rem;
   padding: 5rem 0; }
+
+.contacto__heading {
+  width: 38rem;
+  margin: 0 auto; }
+  .contacto__heading img {
+    width: 15rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3rem; }
+  .contacto__heading p {
+    font-family: "Flamenco", sans-serif;
+    font-size: 1.6rem;
+    color: #60B7B7;
+    text-align: center;
+    margin-top: 2rem; }

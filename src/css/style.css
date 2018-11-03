@@ -327,6 +327,6 @@ h1, h2, h3 {
 
 .talleres__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   grid-gap: 5rem;
   padding: 5rem 0; }

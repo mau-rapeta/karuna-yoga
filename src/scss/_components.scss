@@ -1,0 +1,29 @@
+.main {
+    background-image: url(../img/home-background.jpg);
+    background-repeat: repeat-y;
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.heading {
+    font-size: $font-bg;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $headers-font;
+
+    &--red {
+        color: $color3;
+    }
+
+    &--grey {
+        color: $color-grey;
+    }
+}
+
+.card {
+    background-color: $color3;
+    height: 20rem;
+}

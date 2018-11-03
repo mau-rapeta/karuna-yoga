@@ -1,7 +1,7 @@
 .nosotros {
 
     &__box {
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
     }
 
@@ -48,6 +48,74 @@
 
         p {
             margin-top: 2rem;
+            text-align: justify;
+        }
+    }
+
+    &__karuna {
+        display: flex;
+        margin-top: 8rem;
+    }
+
+    &__karuna-text {
+        flex: 0 0 50%;
+        text-align: justify;
+        padding: 2rem;
+    }
+
+    &__karuna-heading {
+        flex: 0 0 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 8.5rem;
+            color: $color1;
+
+            span {
+                font-size: 4.5rem;
+                color: $color-grey;
+                display: block;
+            }
+        }
+    }
+
+    &__video {
+        width: 100%;
+        height: 40vw;
+        max-height: 55rem;
+        background-color: $color-grey;
+        margin: 5rem 0;
+    }
+
+    &__dharma {
+        background-image: url(../img/mandala-background.png);
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    &__dharma-img {
+        width: 15rem;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    &__mision,
+    &__vision {
+        margin: 4rem 0;
+
+        h4 {
+        color: $color3;
+        font-size: $font-md;
+        font-weight: $bold;
+        margin-bottom: 2rem;
+        }
+
+        p {
             text-align: justify;
         }
     }

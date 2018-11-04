@@ -13,31 +13,31 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav" data-offset="200">
     
     <nav class="navigation" id="nav">
         <div class="container">
-            <ul class="navigation__list">
+            <ul class="navigation__list nav">
                 <div class="navigation__box onlyDesktop">
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">home 
+                        <a href="#mainCarousel" class="navigation__link nav-link scroll active">home 
                             <img src="img/indicador-menu.svg" alt="indicator" class="navigation__indicator">
                         </a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">nosotros
+                        <a href="#nosotros" class="navigation__link scroll nav-link">nosotros
                             <img src="img/indicador-menu.svg" alt="indicator" class="navigation__indicator">
                         </a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">talleres
+                        <a href="#talleres" class="navigation__link scroll nav-link">talleres
                             <img src="img/indicador-menu.svg" alt="indicator" class="navigation__indicator">
                         </a>
                     </li>
                 </div>
                 
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a href="index.html" class="navigation__link">
                         <img src="img/karuna-yoga.svg" alt="logo" class="navigation__logo">
                     </a>
                 </li>
@@ -49,7 +49,7 @@
                         </a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">contacto
+                        <a href="#contacto" class="navigation__link scroll nav-link">contacto
                             <img src="img/indicador-menu.svg" alt="indicator" class="navigation__indicator">
                         </a>
                     </li>
@@ -122,7 +122,7 @@
                         <div class="nosotros__banner">
                             <img src="img/religion.svg" alt="religion" class="nosotros__banner-img">
                             <div class="nosotros__scroll-box">
-                                <a href="#"><img src="img/scroll.svg" alt="scroll" class="nosotros__scroll"></a>
+                                <a href="#nosotros" class="scroll"><img src="img/scroll.svg" alt="scroll" class="nosotros__scroll"></a>
                             </div>
                         </div>
                         <div class="nosotros__sat">
@@ -137,7 +137,7 @@
                             contempla las olas de este océano de felicidad.</p>
                         </div>
                     </div>
-                    <div class="nosotros__karuna">
+                    <div class="nosotros__karuna" id="nosotros">
                         <div class="nosotros__karuna-text">
                             <p>
                             <span class="bold">"Karuna"</span> es una palabra sánscrita que significa 
@@ -197,7 +197,7 @@
                     </div>
                 </section>
 
-                <section class="talleres">
+                <section class="talleres" id="talleres">
                     <div class="talleres__heading">
                         <img src="img/platicas-icono.svg" alt="platicas">
                         <h4 class="heading heading--grey">
@@ -245,7 +245,7 @@
                     </div>
                 </section>
 
-                <section class="contacto">
+                <section class="contacto" id="contacto">
                     <div class="contacto__heading">
                         <img src="img/flor-loto-icono.svg" alt="flor loto">
                         <h3 class="heading heading--grey">ponte en contacto</h3>
@@ -253,11 +253,38 @@
                         la vida espiritual a tus actividades cotidianas.
                         </p>
                     </div>
+                    <form action="" class="form">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <input type="text" class="form__input" name="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <input type="email" class="form__input" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <input type="text" class="form__input" name="telefono" placeholder="Teléfono">
+                            </div>
+                        </div>
+                        <textarea name="mensaje" class="form__input form__message" placeholder="Mensaje"></textarea>
+                        <button type="submit" class="btn btn--form float-right">enviar</button>
+                    </form>
                 </section>
             
             </div>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer__email">
+            rf@karunayoga.com.mx
+        </div>
+        <div class="footer__karunayoga">
+            karuna yoga 2018
+        </div>
+        <div class="footer__tel">
+            +52 (55) 6163 2743 | 52+ 7039 6099
+        </div>
+    </footer>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>

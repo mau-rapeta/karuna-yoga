@@ -48,12 +48,14 @@
             color: $color-dark;
         }
 
-        &:hover {
+        &:hover,
+        &.active {
             color: $color1;
         }
      }
 
-    &__link:hover &__indicator {
+    &__link:hover &__indicator,
+    &__link.active &__indicator {
         opacity: 1;
     }
 

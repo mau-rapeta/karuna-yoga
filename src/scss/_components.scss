@@ -58,12 +58,12 @@
 }
 
 .btn {
+    &,
     &:link,
     &:visited {
         display: inline-block;
         color: $color-white;
         font-family: $headers-font;
-        padding: 3px 1.5rem;
         background-color: $color3;
     }
 
@@ -71,5 +71,71 @@
         border-radius: 2rem;
         font-size: $font-rg;
         align-self: flex-start;
+        padding: 3px 1.5rem;
+    }
+
+    &--form {
+        text-transform: uppercase;
+        font-size: $font-md;
+        padding: 3px 3rem;
+    }
+
+    &:hover {
+        background-color: darken($color3, 10%);
+    }
+}
+
+.form {
+    font-family: $headers-font;
+    margin: 3rem 0;
+
+    &__input {
+        border: 1px solid $color-grey;
+        background-color: transparent;
+        width: 100%;
+        font-family: inherit;
+        padding: 5px 1.5rem;
+        color: $color-grey;
+        outline: none;
+        margin-bottom: 2.5rem;
+    }
+
+    &__message {
+        margin-top: 0;
+        margin-bottom: 3rem;
+        height: 12rem;
+    }
+}
+
+.footer {
+    background-image: linear-gradient($color1, $color4);
+    color: $color-white;
+    font-family: $headers-font;
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-lg) {
+        height: 6rem;
+    }
+
+    &__email {
+        border-bottom: 1px solid $color-white;
+
+        @media only screen and (max-width: $bp-lg) {
+            display: none;
+        }
+    }
+
+    &__karunayoga {
+        text-transform: uppercase;
+    }
+
+    &__tel {
+
+        @media only screen and (max-width: $bp-lg) {
+            display: none;
+        }
     }
 }

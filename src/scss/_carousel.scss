@@ -1,5 +1,5 @@
 .carousel {
-    margin-top: 8rem;
+    padding-top: 8rem;
 
     &__item {
         height: 60rem;
@@ -40,5 +40,10 @@
             border-radius: 50%;
             margin: 0 8px;
         }
+    }
+
+    &-control-next,
+    &-control-prev {
+        top: 8rem;
     }
 }

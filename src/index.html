@@ -7,6 +7,7 @@
     <title>Karuna Yoga</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Flamenco|Krub:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Third party CSS styles -->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,6 +19,9 @@
     <nav class="navigation" id="nav">
         <div class="container">
             <ul class="navigation__list nav">
+                <div class="navigation__empty-box">
+                    &nbsp;
+                </div>
                 <div class="navigation__box onlyDesktop">
                     <li class="navigation__item">
                         <a href="#mainCarousel" class="navigation__link nav-link scroll active">home 
@@ -44,7 +48,7 @@
 
                 <div class="navigation__box onlyDesktop">
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">blog
+                        <a href="blog.html" class="navigation__link">blog
                             <img src="img/indicador-menu.svg" alt="indicator" class="navigation__indicator">
                         </a>
                     </li>
@@ -66,7 +70,24 @@
                         </li>
                     </div>
                 </div>
+                <div class="navigation__button-box">
+                    <img src="img/menu-movil.svg" alt="menu" class="navigation__button" id="navi-toggle">
+                </div>
             </ul>
+        </div>
+    </nav>
+
+    <nav class="navMobile onlyMobile">
+        <ul class="navMobile__list">
+            <li class="navMobile__item"><a href="#mainCarousel" class="navMobile__link scroll">home</a></li>
+            <li class="navMobile__item"><a href="#nosotros" class="navMobile__link scroll">nosotros</a></li>
+            <li class="navMobile__item"><a href="#talleres" class="navMobile__link scroll">talleres</a></li>
+            <li class="navMobile__item"><a href="#" class="navMobile__link">blog</a></li>
+            <li class="navMobile__item"><a href="#contacto" class="navMobile__link scroll">contacto</a></li>
+        </ul>
+        <div class="navMobile__social-box">
+            <a href="#"><img src="img/facebook.svg" alt="facebook" class="navMobile__social-icon"></a>
+            <a href="#"><img src="img/instagram.svg" alt="instagram" class="navMobile__social-icon"></a>
         </div>
     </nav>
 
@@ -121,11 +142,11 @@
                     <div class="nosotros__box">
                         <div class="nosotros__banner">
                             <img src="img/religion.svg" alt="religion" class="nosotros__banner-img">
-                            <div class="nosotros__scroll-box">
+                            <div class="nosotros__scroll-box onlyDesktop">
                                 <a href="#nosotros" class="scroll"><img src="img/scroll.svg" alt="scroll" class="nosotros__scroll"></a>
                             </div>
                         </div>
-                        <div class="nosotros__sat">
+                        <div class="nosotros__sat  onlyDesktop">
                             <h2 class="heading heading--red">sat - chit - ananda</h2>
                             <p>Saludo a esta realidad SAT en la que todos los seres animados e inanimados
                             se manifiestan como su tuviera una existencia independiente permanece
@@ -209,7 +230,7 @@
                         <div class="card">
                             <div class="card__content">
                                 <span>El proposito de nuestra vida</span>
-                                <a href="#" class="btn btn--card">Ver detalle</a>
+                                <a href="#vida-popup" data-effect="mfp-zoom-in" class="btn btn--card">Ver detalle</a>
                             </div>
                             <picture class="card__picture">
                                 <img src="img/proposito-vida.jpg" alt="vida" class="card__img">
@@ -218,7 +239,7 @@
                         <div class="card">
                             <div class="card__content">
                                 <span>Yoga del Amor</span>
-                                <a href="#" class="btn btn--card">Ver detalle</a>
+                                <a href="#amor-popup" data-effect="mfp-zoom-in" class="btn btn--card">Ver detalle</a>
                             </div>
                             <picture class="card__picture">
                                 <img src="img/yoga-del-amor.jpg" alt="amor" class="card__img">
@@ -227,7 +248,7 @@
                         <div class="card">
                             <div class="card__content">
                                 <span>Perder el miedo a morir</span>
-                                <a href="#" class="btn btn--card">Ver detalle</a>
+                                <a href="#miedo-popup" data-effect="mfp-zoom-in" class="btn btn--card">Ver detalle</a>
                             </div>
                             <picture class="card__picture">
                                 <img src="img/perder-el-miedo.jpg" alt="miedo" class="card__img">
@@ -236,7 +257,7 @@
                         <div class="card">
                             <div class="card__content">
                                 <span>Yo Soy</span>
-                                <a href="#" class="btn btn--card">Ver detalle</a>
+                                <a href="#soy-popup" data-effect="mfp-zoom-in" class="btn btn--card">Ver detalle</a>
                             </div>
                             <picture class="card__picture">
                                 <img src="img/yo-soy.jpg" alt="soy" class="card__img">
@@ -244,6 +265,162 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Popups from talleres section -->
+
+                <div id="vida-popup" class="popup mfp-with-anim mfp-hide">
+                    <div class="popup__content">
+                        <h3 class="heading heading--popup">El proposito de nuestra vida
+                            <span>- CURSO - Duración 6 horas</span>
+                        </h3>
+                        <p>
+                            El Yoga del Amor es un curso a través del cual pondremos en practica en
+                            nuestra vida cotidiana, las enseñanzas de Jesús. Jesús nos legó una disciplina
+                            cumbre de la sabiduría espiritual.
+                        </p>
+                        <p>
+                            DIRIGIDO: A aquellos sinceramente interesados en su crecimiento espiritual.
+                            BENEFICIOS: Incorporar a tu día a día las enseñanzas de los evangelios y
+                            experimentar directamente la unidad del amor.
+                        </p>
+                        <p>
+                            EL SERMÓN DE LA MONTAÑA; UN LEGADO DE AMOR A LA HUMANIDAD:
+                            Haced bien a los que os aborrecen; bendecid a los que os maldicen, y orad por
+                            los que os calumnian. Y al que te hiriere en la mejilla, ofrécele la otra "Dar la
+                            otra mejilla" es una respuesta de Jesús frente al “Ojo por ojo”. Esto constituye
+                            la enseñanza de no responder al mal con otro mal, sino con el bien. Estos son
+                            los temas tratado en el yoga del Amor, sin dogma alguno.
+                        </p>
+                        <p>
+                            Te invitamos a conocer el Yoga de Jesús y experimentar una vida espiritual
+                            llena de gozo, alegría, ecuanimidad y amor.
+                        </p>
+                        <p>
+                            Para más informes comunícate a:
+                            <span class="lineBreak ml-2"><i class="fa fa-envelope-o" aria-hidden="true"></i> rf@karunayoga.com.mx</span>
+                            <span class="lineBreak ml-2"><i class="fa fa-phone" aria-hidden="true"></i> +52 (55) 6163 2743 | 52+ 7039 6099</span>
+                        </p>
+                    </div>
+                    <picture class="popup__picture">
+                        <img src="img/proposito-vida.jpg" alt="vida" class="popup__img">
+                    </picture>    
+                </div>
+
+                <div id="amor-popup" class="popup mfp-with-anim mfp-hide">
+                    <div class="popup__content">
+                        <h3 class="heading heading--popup">Yoga del Amor
+                            <span>- CURSO - Duración 6 horas</span>
+                        </h3>
+                        <p>
+                            El Yoga del Amor es un curso a través del cual pondremos en practica en
+                            nuestra vida cotidiana, las enseñanzas de Jesús. Jesús nos legó una disciplina
+                            cumbre de la sabiduría espiritual.
+                        </p>
+                        <p>
+                            DIRIGIDO: A aquellos sinceramente interesados en su crecimiento espiritual.
+                            BENEFICIOS: Incorporar a tu día a día las enseñanzas de los evangelios y
+                            experimentar directamente la unidad del amor.
+                        </p>
+                        <p>
+                            EL SERMÓN DE LA MONTAÑA; UN LEGADO DE AMOR A LA HUMANIDAD:
+                            Haced bien a los que os aborrecen; bendecid a los que os maldicen, y orad por
+                            los que os calumnian. Y al que te hiriere en la mejilla, ofrécele la otra "Dar la
+                            otra mejilla" es una respuesta de Jesús frente al “Ojo por ojo”. Esto constituye
+                            la enseñanza de no responder al mal con otro mal, sino con el bien. Estos son
+                            los temas tratado en el yoga del Amor, sin dogma alguno.
+                        </p>
+                        <p>
+                            Te invitamos a conocer el Yoga de Jesús y experimentar una vida espiritual
+                            llena de gozo, alegría, ecuanimidad y amor.
+                        </p>
+                        <p>
+                            Para más informes comunícate a:
+                            <span class="lineBreak ml-2"><i class="fa fa-envelope-o" aria-hidden="true"></i> rf@karunayoga.com.mx</span>
+                            <span class="lineBreak ml-2"><i class="fa fa-phone" aria-hidden="true"></i> +52 (55) 6163 2743 | 52+ 7039 6099</span>
+                        </p>
+                    </div>
+                    <picture class="popup__picture">
+                        <img src="img/yoga-del-amor.jpg" alt="amor" class="popup__img">
+                    </picture> 
+                </div>
+
+                <div id="miedo-popup" class="popup mfp-with-anim mfp-hide">
+                    <div class="popup__content">
+                        <h3 class="heading heading--popup">Perder el miedo a morir
+                            <span>- CURSO - Duración 6 horas</span>
+                        </h3>
+                        <p>
+                            El Yoga del Amor es un curso a través del cual pondremos en practica en
+                            nuestra vida cotidiana, las enseñanzas de Jesús. Jesús nos legó una disciplina
+                            cumbre de la sabiduría espiritual.
+                        </p>
+                        <p>
+                            DIRIGIDO: A aquellos sinceramente interesados en su crecimiento espiritual.
+                            BENEFICIOS: Incorporar a tu día a día las enseñanzas de los evangelios y
+                            experimentar directamente la unidad del amor.
+                        </p>
+                        <p>
+                            EL SERMÓN DE LA MONTAÑA; UN LEGADO DE AMOR A LA HUMANIDAD:
+                            Haced bien a los que os aborrecen; bendecid a los que os maldicen, y orad por
+                            los que os calumnian. Y al que te hiriere en la mejilla, ofrécele la otra "Dar la
+                            otra mejilla" es una respuesta de Jesús frente al “Ojo por ojo”. Esto constituye
+                            la enseñanza de no responder al mal con otro mal, sino con el bien. Estos son
+                            los temas tratado en el yoga del Amor, sin dogma alguno.
+                        </p>
+                        <p>
+                            Te invitamos a conocer el Yoga de Jesús y experimentar una vida espiritual
+                            llena de gozo, alegría, ecuanimidad y amor.
+                        </p>
+                        <p>
+                            Para más informes comunícate a:
+                            <span class="lineBreak ml-2"><i class="fa fa-envelope-o" aria-hidden="true"></i> rf@karunayoga.com.mx</span>
+                            <span class="lineBreak ml-2"><i class="fa fa-phone" aria-hidden="true"></i> +52 (55) 6163 2743 | 52+ 7039 6099</span>
+                        </p>
+                    </div>
+                    <picture class="popup__picture">
+                        <img src="img/perder-el-miedo.jpg" alt="miedo" class="popup__img">
+                    </picture>     
+                </div>
+
+                <div id="soy-popup" class="popup mfp-with-anim mfp-hide">
+                    <div class="popup__content">
+                        <h3 class="heading heading--popup">Yo Soy
+                            <span>- CURSO - Duración 6 horas</span>
+                        </h3>
+                        <p>
+                            El Yoga del Amor es un curso a través del cual pondremos en practica en
+                            nuestra vida cotidiana, las enseñanzas de Jesús. Jesús nos legó una disciplina
+                            cumbre de la sabiduría espiritual.
+                        </p>
+                        <p>
+                            DIRIGIDO: A aquellos sinceramente interesados en su crecimiento espiritual.
+                            BENEFICIOS: Incorporar a tu día a día las enseñanzas de los evangelios y
+                            experimentar directamente la unidad del amor.
+                        </p>
+                        <p>
+                            EL SERMÓN DE LA MONTAÑA; UN LEGADO DE AMOR A LA HUMANIDAD:
+                            Haced bien a los que os aborrecen; bendecid a los que os maldicen, y orad por
+                            los que os calumnian. Y al que te hiriere en la mejilla, ofrécele la otra "Dar la
+                            otra mejilla" es una respuesta de Jesús frente al “Ojo por ojo”. Esto constituye
+                            la enseñanza de no responder al mal con otro mal, sino con el bien. Estos son
+                            los temas tratado en el yoga del Amor, sin dogma alguno.
+                        </p>
+                        <p>
+                            Te invitamos a conocer el Yoga de Jesús y experimentar una vida espiritual
+                            llena de gozo, alegría, ecuanimidad y amor.
+                        </p>
+                        <p>
+                            Para más informes comunícate a:
+                            <span class="lineBreak ml-2"><i class="fa fa-envelope-o" aria-hidden="true"></i> rf@karunayoga.com.mx</span>
+                            <span class="lineBreak ml-2"><i class="fa fa-phone" aria-hidden="true"></i> +52 (55) 6163 2743 | 52+ 7039 6099</span>
+                        </p>
+                    </div>
+                    <picture class="popup__picture">
+                        <img src="img/yo-soy.jpg" alt="soy" class="popup__img">
+                    </picture>     
+                </div>
+
+                <!-- Sección de contacto -->
 
                 <section class="contacto" id="contacto">
                     <div class="contacto__heading">
@@ -266,7 +443,7 @@
                             </div>
                         </div>
                         <textarea name="mensaje" class="form__input form__message" placeholder="Mensaje"></textarea>
-                        <button type="submit" class="btn btn--form float-right">enviar</button>
+                        <button type="submit" class="btn btn--form float-right" name="submit">enviar</button>
                     </form>
                 </section>
             

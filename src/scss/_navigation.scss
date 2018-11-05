@@ -18,6 +18,10 @@
         display: flex;
         justify-content: space-between;
         align-items: start;
+
+        @media only screen and (max-width: $bp-md) {
+            padding: 0 2rem;
+        }
      }
 
      &__box {
@@ -85,7 +89,30 @@
         width: 8rem;
     }
 
-     &__facebook {
+    &__facebook {
         height: 2rem;
-     }
+    }
+
+    &__button-box {
+        display: none;
+
+        @media only screen and (max-width: $bp-lg) {
+            display: inline-flex;
+        }
+    }
+
+    &__button {
+        height: 5rem;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+
+    &__empty-box {
+        display: none;
+        width: 4rem;
+
+        @media only screen and (max-width: $bp-lg) {
+            display: inline-flex;
+        }
+    }
 }

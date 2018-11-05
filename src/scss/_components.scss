@@ -5,6 +5,14 @@
     &__container {
         width: 80%;
         margin: 0 auto;
+
+        @media only screen and (max-width: $bp-lg) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: $bp-sm) {
+            padding: 0 1rem;
+        }
     }
 }
 
@@ -20,6 +28,21 @@
 
     &--grey {
         color: $color-grey;
+    }
+
+    &--popup {
+        text-transform: none;
+        color: $color1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+
+        span {
+            color: $color-dark;
+            font-size: $font-lg;
+            text-align: right;
+        }
     }
 }
 
@@ -138,4 +161,82 @@
             display: none;
         }
     }
+}
+
+.popup {
+    position: relative;
+    background-color: $color-white;
+    width: 80%;
+    margin: 0 auto; 
+    display: flex;
+
+    @media only screen and (max-width: $bp-lg) {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    &__content {
+        flex: 0 0 60%;
+        font-size: $font-rg;
+        padding: 2rem 3rem;
+
+        p {
+            margin: 1.5rem 0;
+        }
+    }
+
+    &__picture {
+        flex: 0 0 40%;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// Magnific popup styles
+
+// ====== Zoom effect ======
+
+.mfp-zoom-in {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out; 
+    transform: scale(0.8); 
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+	  transition: all 0.3s ease-out;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1); 
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: scale(0.8); 
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+  
 }

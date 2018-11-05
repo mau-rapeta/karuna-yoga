@@ -3,18 +3,30 @@
     &__box {
         width: 60%;
         margin: 0 auto;
+
+        @media only screen and (max-width: $bp-lg) {
+            width: 100%;
+        }
     }
 
     &__banner {
         width: 100%;
         margin: 2rem 0 20rem 0;
         position: relative;
+
+        @media only screen and (max-width: $bp-lg) {
+            margin: 2rem 0;
+        }
     }
 
     &__banner-img {
         width: 85%;
         margin: 0 auto;
         display: block;
+
+        @media only screen and (max-width: $bp-sm) {
+            width: 95%;
+        }
     }
 
     &__scroll-box {
@@ -55,12 +67,20 @@
     &__karuna {
         display: flex;
         margin-top: 8rem;
+
+        @media only screen and (max-width: $bp-lg) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__karuna-text {
         flex: 0 0 50%;
         text-align: justify;
         padding: 2rem;
+
+        @media only screen and (max-width: $bp-lg) {
+            padding: 2rem 0;
+        }
     }
 
     &__karuna-heading {
@@ -110,7 +130,7 @@
 
         h4 {
         color: $color3;
-        font-size: $font-md;
+        font-size: $font-lg;
         font-weight: $bold;
         margin-bottom: 2rem;
         }

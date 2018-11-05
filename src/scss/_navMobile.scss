@@ -1,0 +1,50 @@
+.navMobile {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    background-image: url(../img/home-movil-background.jpg);
+    background-size: cover;
+    z-index: 250;
+    padding-top: 20rem;
+    left: -100%;
+    transition: left .6s cubic-bezier(0.86, 0, 0.07, 1);
+
+    &__list {
+        text-align: center;
+    }
+
+    &__item {
+        list-style-type: none;
+        margin: 2.5rem 0;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            color: $color-dark;
+            font-family: $headers-font;
+            font-size: 2.5rem;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $color1;
+        }
+    }
+
+    &__social-box {
+        padding: 4rem 0;
+        border-top: 1px solid $color1;
+        display: flex;
+        justify-content: space-between;
+        width: 10rem;
+        margin: 0 auto;
+    }
+
+    &__social-icon {
+        height: 4rem;
+    }
+}

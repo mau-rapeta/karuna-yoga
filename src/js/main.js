@@ -32,4 +32,34 @@ $(document).ready(function() {
             }
         }
     });
+
+    // Magnific popup JS
+    // Inline popups
+    $('.btn--card').magnificPopup({
+        removalDelay: 500, //delay removal by X to allow out-animation
+        callbacks: {
+        beforeOpen: function() {
+            this.st.mainClass = this.st.el.attr('data-effect');
+        }
+        },
+        midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+    });
+
+    // Mobile menu functionality
+    var toggle = 1;
+    $('#navi-toggle').click(function() {
+        console.log("menu movil");
+        if(toggle == 1) {
+            $('.navMobile').css('left', '0');
+            toggle = 0;
+        }else {
+            toggle = 1;
+            $('.navMobile').css('left', '-100%');
+        }
+    });
+
+    $('.navMobile__link').click(function() {
+        toggle = 1;
+        $('.navMobile').css('left', '-100%');
+    });
 });

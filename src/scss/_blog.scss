@@ -10,6 +10,7 @@
         @media only screen and (max-width: $bp-sm) {
             background-image: url(../img/blog-header-movil.jpg);
             background-position: center;
+            height: 100vh;
         }
     }
 
@@ -42,11 +43,21 @@
 
     &__entradas {
         margin-top: 5rem;
+        margin-left: 4rem;
+
+        @media only screen and (max-width: $bp-lg) {
+            margin-left: 0;
+        }
 
         h4 {
             font-size: $font-md;
             padding: 1rem 0;
             border-bottom: 1px solid $color-grey;
+            margin-left: -1rem;
+
+            @media only screen and (max-width: $bp-lg) {
+                margin-left: 0;
+            }
         }
     }
 
@@ -56,14 +67,20 @@
         align-items: center;
         justify-content: center;
         margin: 2rem 0;
+
+        &:hover {
+            background-color: #e5e5e5;
+        }
     }
 
     &__entradas-pic {
         flex: 0 0 60%;
         height: 9vw;
+        max-height: 10rem;
 
         @media only screen and (max-width: $bp-lg) {
             height: 30vw;
+            max-height: initial;
         }
     }
 
@@ -80,5 +97,6 @@
         color: $color-dark;
         font-family: $headers-font;
         text-transform: uppercase;
+        font-size: $font-rg;
     }
 }

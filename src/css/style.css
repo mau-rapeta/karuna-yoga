@@ -546,8 +546,7 @@ h1, h2, h3, h4 {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column;
-      padding: 2rem 0; } }
+      flex-direction: column; } }
   .popup__content {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 60%;
@@ -557,6 +556,9 @@ h1, h2, h3, h4 {
     padding: 2rem 3rem; }
     .popup__content p {
       margin: 1.5rem 0; }
+      @media only screen and (max-width: 61.9375em) {
+        .popup__content p {
+          text-align: justify; } }
   .popup__picture {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 40%;
@@ -647,6 +649,7 @@ h1, h2, h3, h4 {
   background-size: cover;
   z-index: 250;
   padding-top: 20rem;
+  top: 0;
   left: -100%;
   -webkit-transition: left 0.6s cubic-bezier(0.86, 0, 0.07, 1);
   -o-transition: left 0.6s cubic-bezier(0.86, 0, 0.07, 1);
@@ -689,7 +692,8 @@ h1, h2, h3, h4 {
   @media only screen and (max-width: 35.9375em) {
     .blog__header {
       background-image: url(../img/blog-header-movil.jpg);
-      background-position: center; } }
+      background-position: center;
+      height: 100vh; } }
 
 .blog__sub-header {
   margin: 5rem 0; }
@@ -711,11 +715,19 @@ h1, h2, h3, h4 {
   width: 100%; }
 
 .blog__entradas {
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  margin-left: 4rem; }
+  @media only screen and (max-width: 61.9375em) {
+    .blog__entradas {
+      margin-left: 0; } }
   .blog__entradas h4 {
     font-size: 1.8rem;
     padding: 1rem 0;
-    border-bottom: 1px solid #8B8B8B; }
+    border-bottom: 1px solid #8B8B8B;
+    margin-left: -1rem; }
+    @media only screen and (max-width: 61.9375em) {
+      .blog__entradas h4 {
+        margin-left: 0; } }
 
 .blog__entradas-element {
   display: -webkit-box;
@@ -732,16 +744,20 @@ h1, h2, h3, h4 {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 2rem 0; }
+  .blog__entradas-element:hover {
+    background-color: #e5e5e5; }
 
 .blog__entradas-pic {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 60%;
   -ms-flex: 0 0 60%;
   flex: 0 0 60%;
-  height: 9vw; }
+  height: 9vw;
+  max-height: 10rem; }
   @media only screen and (max-width: 61.9375em) {
     .blog__entradas-pic {
-      height: 30vw; } }
+      height: 30vw;
+      max-height: initial; } }
 
 .blog__entradas-img {
   display: block;
@@ -758,4 +774,5 @@ h1, h2, h3, h4 {
   padding: 1rem;
   color: #4D4D4D;
   font-family: "Flamenco", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1.6rem; }

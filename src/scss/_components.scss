@@ -172,7 +172,6 @@
 
     @media only screen and (max-width: $bp-lg) {
         flex-direction: column;
-        padding: 2rem 0;
     }
 
     &__content {
@@ -182,6 +181,10 @@
 
         p {
             margin: 1.5rem 0;
+
+            @media only screen and (max-width: $bp-lg) {
+                text-align: justify;
+            }
         }
     }
 
